@@ -1,0 +1,318 @@
+/* your theme's styles */
+body {
+	padding:0;
+	margin:0;
+}
+
+/* your theme's styles */
+body {
+	padding:0;
+	margin:0;
+}
+
+/*This is formatting for the first line in the popup */
+p.title {
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	color: #4D701F;
+}
+
+/*This is formatting for the second line in the popup */
+p.subcategory-display-new {
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*This is formatting for the third line in the popup */
+p.dates-active {
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*This is formatting for the fourth line in the popup */
+p.office {
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+}
+
+p {
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	margin-top: 0;
+    margin-bottom: 0;
+}
+
+.leaflet-popup-scrolled {
+  overflow:auto;
+  border-bottom:1px solid #29473d;
+  border-top:1px solid #ebeae8;
+  }
+
+.leaflet-popup-content {
+  background: #ebeae8;
+  color:#585657;
+  font-size:12px;
+ /* width:auto !important;*/
+  }
+
+.leaflet-popup-content-wrapper {
+  background: #ebeae8;
+  padding:1px;
+  text-align:left;
+  pointer-events:all;
+  line-height:24px;
+  }
+
+.leaflet-popup-tip {
+  width:0;
+  height:0;
+  margin:0;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+  border-top:10px solid #ebeae8;
+  box-shadow:none;
+  }
+
+/*this controls the appearance of the expanded layer switcher */
+.leaflet-control-layers-expanded {
+  background:#42565B;
+  padding:6px 10px 6px 6px;
+  color:#404040;
+  color:rgba(0,0,0,0.75);
+  font-size: 14px;
+  }
+
+  /*this determines the color of the label text in the layer switcher box */
+  .leaflet-control-layers label {
+  display: block;
+  color: #fff
+  }
+
+a.leaflet-popup-close-button {
+	color: #fff
+}
+
+a:link{
+  color:#b1d4cb;
+}
+
+a:visited{
+  color:#b1d4cb;
+}
+
+#map {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+/* Use this to style the legend with the custom icons*/
+.legendbox{
+	position:fixed;
+	padding:5px 5px 5px 5px;
+	left:300px;
+	bottom:40px;
+	width:180px;
+	height:100px;
+	background:#42565b;
+	overflow:hidden;
+	}
+
+.stateicon{
+	float:left;
+	width:20px;
+	height:35px;
+}
+
+.legendtitle	{
+	float:left;
+	width:180px;
+	height:32px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: bold;
+	font-variant: bold;
+	font-weight: bold;
+	color: #fff
+}
+
+.statecaption	{
+	float:right;
+	width:150px;
+	height:35px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #fff
+}
+
+.schoolicon{
+	float:left;
+	width:20px;
+	height:35px;
+}
+
+.schoolcaption{
+	float:right;
+	width:150px;
+	height:35px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #fff
+}
+
+
+
+.schoolcaption	{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #fff
+}
+
+.logobox{
+	position:absolute;
+	right:10px;
+	bottom:25px;
+	}
+
+#map {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+/* Use this to style the 'About This Map' pop-out */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #29473d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /*padding-top: 60px;*/
+}
+
+/*.sidenav p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s
+}*/
+
+p.navtitle {
+    padding: 20px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+	font-weight: bold;
+    color: #b1d4cb;
+    display: block;
+    transition: 0.3s
+}
+
+p.moreinfo  {
+  padding: 8px 8px 8px 32px;
+  background: #29473d;
+  color:#fff;
+  font-size:14px;
+ /* width:auto !important;*/
+  }
+
+.sidenav a {
+    /*padding: 8px 8px 8px 32px;*/
+    text-decoration: none;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #b1d4cb;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 28px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 0px;
+}
+
+#about {
+	/*transition: margin-left .5s;
+    padding: 16px;*/
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #b1d4cb;
+	filter: alpha(opacity = 0);
+    position:fixed;
+	padding:5px 5px 5px 5px;
+	left:20px;
+	top:20px;
+    display:block;
+    z-index:2;
+    background:#29473d;
+	overflow: auto;
+}
+
+
+/*
+This and the following selector define subheadings.  In these:
+The number set as :nth-child(X) specifies which label to put the heading before.
+The text in the content property is the label text, in which \A denotes a line break.
+The white-space property is essential for the line breaks to be handled correctly.
+Everything else is normal CSS styling
+
+div.leaflet-control-layers-overlays label:nth-child(1)::before {
+	content: "2017 Accomplishments\A";
+	white-space: pre;
+	font-weight: bold;
+}
+
+div.leaflet-control-layers-overlays label:nth-child(4)::before {
+	content: "\AMulti-winner election systems\A";
+	white-space: pre;
+	font-weight: bold;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+*/
