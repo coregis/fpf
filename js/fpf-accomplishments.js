@@ -17,14 +17,14 @@ function buildMap(data, tabletop) {
 L.mapbox.accessToken = 'pk.eyJ1IjoiY29yZS1naXMiLCJhIjoiaUxqQS1zQSJ9.mDT5nb8l_dWIHzbnOTebcQ';
 
   // build map
-  var map = L.mapbox.map('map').setView([38.638327,-90.285151],16);
+  var map = L.mapbox.map('map').setView([38.638327,-90.285151],15);
   L.mapbox.styleLayer('mapbox://styles/core-gis/cjc84jy4y1yz92smjivoelmd8').addTo(map);
   map.zoomControl.setPosition('topright');
-  map.options.minZoom = 15;
+  map.options.minZoom = 14;
   map.options.maxZoom = 18;
   map.setMaxBounds([
-	[38.623576, -90.308175], //southwest map coordinates
-    [38.649187, -90.259509] //northeast map coordinates
+	[38.603576, -90.308175], //southwest map coordinates
+    [38.673187, -90.259509] //northeast map coordinates
 	])
 
   var points = L.featureGroup();
