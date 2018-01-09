@@ -12,7 +12,7 @@ body {
 
 /*This is formatting for the first line in the popup */
 p.title {
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-family: ff-meta-web-pro, sans-serif;
 	font-size: 20px;
 	font-style: normal;
 	font-variant: normal;
@@ -20,9 +20,43 @@ p.title {
 	color: #4D701F;
 }
 
+/*This is formatting for the first line in the popup */
+ul {
+	list-style-type: circle;
+	font-family: ff-meta-web-pro, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*This is formatting for the second line in the popup */
+ul.details_02 {
+	font-family: ff-meta-web-pro, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*This is formatting for the third line in the popup */
+ul.details_03 {
+	font-family: ff-meta-web-pro, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	margin-top: 0;
+    margin-bottom: 0;
+}
+
 /*This is formatting for the second line in the popup */
 p.subcategory-display-new {
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-family: ff-meta-web-pro, sans-serif;
 	font-size: 16px;
 	font-style: normal;
 	font-variant: normal;
@@ -33,7 +67,7 @@ p.subcategory-display-new {
 
 /*This is formatting for the third line in the popup */
 p.dates-active {
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-family: ff-meta-web-pro, sans-serif;
 	font-size: 16px;
 	font-style: normal;
 	font-variant: normal;
@@ -44,7 +78,7 @@ p.dates-active {
 
 /*This is formatting for the fourth line in the popup */
 p.office {
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-family: ff-meta-web-pro, sans-serif;
 	font-size: 16px;
 	font-style: normal;
 	font-variant: normal;
@@ -52,7 +86,7 @@ p.office {
 }
 
 p {
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-family: ff-meta-web-pro, sans-serif;
 	font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
@@ -200,7 +234,37 @@ a:visited{
 	right:10px;
 	bottom:25px;
 	}
-
+/*
+@media (min-width: 601px) {
+    .logo .mobile {
+		display: none;
+		position:absolute;
+		right:10px;
+		bottom:25px;
+    }
+    .logo.desktop {
+		display: block;
+		position:absolute;
+		right:10px;
+		bottom:25px;
+    }
+  }
+*/
+	/* when screen is less than 600px wide
+     show mobile version and hide desktop 
+@media (max-width: 600px) {
+    .logo .mobile {
+		display: block;
+		position:absolute;
+		right:10px;
+		bottom:28px;
+    }
+    .logo.desktop {
+		display: none;
+    }
+  }
+ */ 
+  
 #map {
 	position:absolute;
 	width:100%;
@@ -251,7 +315,7 @@ p.moreinfo  {
 .sidenav a {
     /*padding: 8px 8px 8px 32px;*/
     text-decoration: none;
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-family: ff-meta-web-pro, sans-serif;
     font-size: 14px;
     color: #b1d4cb;
     transition: 0.3s
@@ -277,7 +341,7 @@ p.moreinfo  {
 #about {
 	/*transition: margin-left .5s;
     padding: 16px;*/
-	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-family: ff-meta-web-pro, sans-serif;
 	font-weight: normal;
 	color: #b1d4cb;
 	filter: alpha(opacity = 0);

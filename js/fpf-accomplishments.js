@@ -18,7 +18,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiY29yZS1naXMiLCJhIjoiaUxqQS1zQSJ9.mDT5nb8l_dWI
 
   // build map
   var map = L.mapbox.map('map').setView([38.638327,-90.285151],16);
-  L.mapbox.styleLayer('mapbox://styles/core-gis/cjc2ferzi1mxv2so4nbgpehlh').addTo(map);
+  L.mapbox.styleLayer('mapbox://styles/core-gis/cjc84jy4y1yz92smjivoelmd8').addTo(map);
   map.zoomControl.setPosition('topright');
   map.options.minZoom = 15;
   map.options.maxZoom = 18;
