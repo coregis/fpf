@@ -20,6 +20,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiY29yZS1naXMiLCJhIjoiaUxqQS1zQSJ9.mDT5nb8l_dWI
   var map = L.mapbox.map('map').setView([38.638327,-90.285151],15);
   L.mapbox.styleLayer('mapbox://styles/core-gis/cjc84jy4y1yz92smjivoelmd8').addTo(map);
   map.zoomControl.setPosition('topright');
+  attributionControl:  false;
   map.options.minZoom = 14;
   map.options.maxZoom = 18;
   map.setMaxBounds([
@@ -27,6 +28,12 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiY29yZS1naXMiLCJhIjoiaUxqQS1zQSJ9.mDT5nb8l_dWI
     [38.673187, -90.259509] //northeast map coordinates
 	])
 
+// Add customized attribution  
+var attribution = L.control.attribution();
+attribution.setPrefix('');
+attribution.addAttribution('<a href="http://coregis.net">Map created by CORE GIS</a>');
+attribution.addTo(map);
+	
   var points = L.featureGroup();
   var accomplishment = L.featureGroup();
   var construction = L.featureGroup();
@@ -48,7 +55,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiY29yZS1naXMiLCJhIjoiaUxqQS1zQSJ9.mDT5nb8l_dWI
 		shadowSize: [68, 95],
 		shadowAnchor: [22, 94]*/
 	}));
-    marker.bindPopup(popupInfo,{'maxWidth':'350','maxHeight':'350','minWidth':'200'});
+    marker.bindPopup(popupInfo,{'maxWidth':'300','maxHeight':'350','minWidth':'200'});
     points.addLayer(marker);
 	if (category === "accomplishment") {
 	   accomplishment.addLayer(marker);
@@ -98,7 +105,7 @@ if (windowWidth < 400) {
 
 
 // This line adds layers to the _legend_
-  L.control.layers(false, overlayMaps, {position: 'bottomleft', collapsed:true}).addTo(map);
+  L.control.layers(false, overlayMaps, {position: 'topleft', collapsed:true}).addTo(map);
 
 // This set of lines loads layers to the map
   map.addLayer(accomplishment);
