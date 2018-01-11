@@ -60,12 +60,6 @@ attribution.addTo(map);
 	if (category === "accomplishment") {
 	   accomplishment.addLayer(marker);
 	}
-	else if (category === "greencare") {
-	   greencare.addLayer(marker);
-	}
-	else if (category === "construction") {
-	   construction.addLayer(marker);
-	}
 }
 
 /* IMPORTANT!
@@ -79,9 +73,7 @@ And search for the selectors that include:
 For each of those, the number in () specifies which legend item they are putting a subheading before.
 */
   var overlayMaps = {
-    "<img src='markers/accomplishment.svg' height=24>Accomplishment": accomplishment,
-	"<img src='markers/construction.svg' height=24>Construction/Maintenance": construction,
-	"<img src='markers/greencare.svg' height=24>Green Care": greencare
+    "<img src='markers/accomplishment.svg' height=24>Accomplishment": accomplishment
   };
 
 
@@ -109,8 +101,6 @@ if (windowWidth < 400) {
 
 // This set of lines loads layers to the map
   map.addLayer(accomplishment);
-  map.addLayer(construction);
-  map.addLayer(greencare);
 
   var bounds = points.getBounds();
   map.fitBounds(bounds, {padding:[30,30]});
