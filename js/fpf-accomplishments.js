@@ -20,7 +20,9 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiY29yZS1naXMiLCJhIjoiaUxqQS1zQSJ9.mDT5nb8l_dWI
   var map = L.mapbox.map('map').setView([38.638327,-90.285151],15);
   L.mapbox.styleLayer('mapbox://styles/core-gis/cjc84jy4y1yz92smjivoelmd8').addTo(map);
   map.zoomControl.setPosition('topright');
-  attributionControl:  false;
+  //turn off the OpenStreet map etc attribution
+  map.removeControl(map.attributionControl);
+  //attributionControl:  false;
   map.options.minZoom = 14;
   map.options.maxZoom = 18;
   map.setMaxBounds([
@@ -31,7 +33,13 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiY29yZS1naXMiLCJhIjoiaUxqQS1zQSJ9.mDT5nb8l_dWI
 // Add customized attribution  
 var attribution = L.control.attribution();
 attribution.setPrefix('');
-attribution.addAttribution('<a href="http://coregis.net">Map created by CORE GIS</a>');
+attribution.addAttribution('<a href="http://coregis.net">Map created by CORE GIS</a>')
+attribution.addTo(map);
+
+// Add customized attribution  
+var attribution = L.control.attribution();
+attribution.setPrefix('');
+attribution.addAttribution('<a href="https://www.mapbox.com/about/maps/" target="_blank"> © Mapbox</a>')
 attribution.addTo(map);
 	
   var points = L.featureGroup();
