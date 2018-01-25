@@ -147,8 +147,8 @@ p {
   display: block;
   color: #fff
   }
-  
- /*this hides the layer control box*/ 
+
+ /*this hides the layer control box*/
   .leaflet-control-layers {
 visibility: hidden !important;
 }
@@ -242,42 +242,33 @@ a:visited{
 	color: #fff
 }
 
-.logobox{
-	position:absolute;
-	left:10px;
-	bottom:10px;
-	}
-/*
 @media (min-width: 601px) {
-    .logo .mobile {
+    .logobox-mobile {
 		display: none;
-		position:absolute;
-		right:10px;
-		bottom:25px;
     }
-    .logo.desktop {
+    .logobox-desktop {
 		display: block;
 		position:absolute;
-		right:10px;
-		bottom:25px;
+		left:10px;
+		bottom:10px;
     }
   }
-*/
+
 	/* when screen is less than 600px wide
-     show mobile version and hide desktop 
+     show mobile version and hide desktop */
 @media (max-width: 600px) {
-    .logo .mobile {
+    .logobox-mobile {
 		display: block;
 		position:absolute;
-		right:10px;
-		bottom:28px;
+		left:10px;
+		bottom:10px;
     }
-    .logo.desktop {
+    .logobox-desktop {
 		display: none;
     }
   }
- */ 
-  
+
+
 #map {
 	position:absolute;
 	width:100%;
