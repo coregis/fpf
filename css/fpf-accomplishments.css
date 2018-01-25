@@ -242,7 +242,7 @@ a:visited{
 	color: #fff
 }
 
-@media (min-width: 601px) {
+@media (min-width: 701px) {
     .logobox-mobile {
 		display: none;
     }
@@ -254,9 +254,9 @@ a:visited{
     }
   }
 
-	/* when screen is less than 600px wide
+	/* when screen is less than 700px wide
      show mobile version and hide desktop */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .logobox-mobile {
 		display: block;
 		position:absolute;
